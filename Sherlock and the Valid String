@@ -21,7 +21,7 @@ def isValid(s):
         return "NO"
     elif len(f) == 1:
         return "YES"
-    for j in sorted(f, key=f.get):
+    for j in f:
             if f[j] == 1:
                 if j + 1 in f or j - 1 in f or j == 1:
                     return "YES"
